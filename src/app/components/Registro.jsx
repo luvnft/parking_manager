@@ -2,18 +2,18 @@
 
 import React from "react";
 import { Auth } from '@supabase/auth-ui-react'
-import { ThemeSupa, } from '@supabase/auth-ui-shared'
+import { ThemeSupa } from '@supabase/auth-ui-shared'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
 
-export const Regpagina = () => {
+export const RegistrationPage = () => {
 
   const supabase = createClientComponentClient()
 
   return (
     <div className="relative">
       <img
-        src="/images/fondo2.jpeg"
+        src="/images/background2.jpeg"
         className="absolute inset-0 object-cover w-full h-full"
         alt=""
       />
@@ -31,11 +31,10 @@ export const Regpagina = () => {
           <div className="flex flex-col items-center justify-between xl:flex-row">
             <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                Nuestra plataforma.
+                Our Platform.
               </h2>
               <p className="max-w-xl mb-4 text-base text-black-900 md:text-lg">
-                Nuestra plataforma ofrece opciones de reserva anticipada, zonas especiales
-                y servicios adicionales para que puedas elegir la opción que mejor se adapte a tus necesidades.
+                Our platform offers advanced booking options, special zones, and additional services to choose the option that best fits your needs.
               </p>
               <a
                 href="/"
@@ -53,9 +52,9 @@ export const Regpagina = () => {
               </a>
             </div>
             <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
-              <div className="bg-gradient-to-br from-gray-900 to-gray-700 rounded shadow-2xl p-7 sm:p-10">
+              <div className="rounded shadow-2xl bg-gradient-to-br from-gray-900 to-gray-700 p-7 sm:p-10">
                 <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
-                  Usuario
+                  User
                 </h3>
 
                 <Auth
@@ -69,34 +68,34 @@ export const Regpagina = () => {
                   localization={{
                     variables: {
                       sign_up: {
-                        email_label: "Correo Electrónico",
-                        password_label: "Contraseña",
-                        email_input_placeholder: "Correo Electrónico",
-                        password_input_placeholder: "Contraseña",
-                        button_label: "Registrarse",
-                        loading_button_label: "Registrarse ...",
-                        social_provider_text: "Iniciar con {{provider}}",
-                        link_text: "¿No tiene una cuenta? Regístrese",
-                        confirmation_text: "Consulta tu correo electrónico para ver el enlace de confirmación"
+                        email_label: "Email Address",
+                        password_label: "Password",
+                        email_input_placeholder: "Email Address",
+                        password_input_placeholder: "Password",
+                        button_label: "Register",
+                        loading_button_label: "Registering ...",
+                        social_provider_text: "Sign in with {{provider}}",
+                        link_text: "Don't have an account? Register",
+                        confirmation_text: "Check your email for the confirmation link"
                       },
                       sign_in: {
-                        email_label: "Correo Electrónico",
-                        password_label: "Contraseña",
-                        email_input_placeholder: "Correo Electrónico",
-                        password_input_placeholder: "Contraseña",
-                        button_label: "Iniciar Sesión",
-                        loading_button_label: "Iniciar Sesión ...",
-                        social_provider_text: "Iniciar con {{provider}}",
-                        link_text: "¿Ya tiene una cuenta? Iniciar sesión"
+                        email_label: "Email Address",
+                        password_label: "Password",
+                        email_input_placeholder: "Email Address",
+                        password_input_placeholder: "Password",
+                        button_label: "Log In",
+                        loading_button_label: "Logging In ...",
+                        social_provider_text: "Sign in with {{provider}}",
+                        link_text: "Already have an account? Log in"
                       },
                       forgotten_password: {
-                        email_label: "Correo Electrónico",
-                        password_label: "Contraseña",
-                        email_input_placeholder: "Correo Electrónico",
-                        button_label: "Enviar instrucciones para restablecer la contraseña",
-                        loading_button_label: "Envío de instrucciones de reinicio ...",
-                        link_text: "¿Ha olvidado su contraseña?",
-                        confirmation_text: "Consulta tu correo electrónico para ver el enlace de restablecimiento de contraseña"
+                        email_label: "Email Address",
+                        password_label: "Password",
+                        email_input_placeholder: "Email Address",
+                        button_label: "Send Password Reset Instructions",
+                        loading_button_label: "Sending reset instructions ...",
+                        link_text: "Forgot your password?",
+                        confirmation_text: "Check your email for the password reset link"
                       }
                     },
                   }}

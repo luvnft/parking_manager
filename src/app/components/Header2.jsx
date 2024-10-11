@@ -16,26 +16,26 @@ export const H2 = () => {
           </svg>
           <img
             className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-            src="/images/fondo1.jpeg"
+            src="/images/background1.jpeg"
             alt=""
           />
         </div>
         <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
           <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none">
-              Tenemos lo que 
+              We have what
               <br className="hidden md:block" />
-              que necesita{' '}
+              you need for{' '}
               <br className="hidden md:block" />
               <span className="inline-block text-deep-purple-accent-400">
-                todo auto.
+                every car.
               </span>
             </h2>
             
             <div className="flex items-center">
-            <Link href="/registro" >
+            <Link href="/register" >
                 <button type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-                  REGISTRATE
+                  REGISTER
                 </button>
             </Link> 
             </div>
@@ -43,6 +43,5 @@ export const H2 = () => {
         </div>
       </div> 
     </div>
-      
     );
   };
